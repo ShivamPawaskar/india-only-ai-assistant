@@ -12,7 +12,7 @@ import india_assistant
 
 HOST = "127.0.0.1"
 PORT = int(os.environ.get("PORT", "8000"))
-WEB_DIR = Path(__file__).parent / "web"
+WEB_DIR = Path(__file__).parent / "public"
 MAX_QUESTION_LENGTH = 2000
 
 

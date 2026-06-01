@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="web/india-mark.svg" alt="India-Only AI Assistant mark" width="150" />
+  <img src="public/india-mark.svg" alt="India-Only AI Assistant mark" width="150" />
 
   <h1>India-Only AI Assistant</h1>
 
@@ -67,10 +67,10 @@ The app opens as a focused chat workspace with:
 ```text
 india_assistant.py      Core assistant prompt, config, and provider calls
 web_app.py              Local web server and JSON API
-web/index.html          Browser chat UI
-web/styles.css          Responsive visual design
-web/app.js              Chat behavior and loading states
-web/india-mark.svg      App visual mark
+public/index.html       Browser chat UI
+public/styles.css       Responsive visual design
+public/app.js           Chat behavior and loading states
+public/india-mark.svg   App visual mark
 test_cases.py           Offline unit tests
 .env.example            Example environment configuration
 requirements.txt        Dependency notes
@@ -119,7 +119,7 @@ http://127.0.0.1:8000
 This project includes Vercel-ready files:
 
 - `api/index.py` as the serverless API entrypoint
-- `vercel.json` for static rewrites from `/` to the `web/` UI
+- `vercel.json` for API routing and the root static page
 
 Install or run the Vercel CLI:
 
