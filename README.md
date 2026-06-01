@@ -114,6 +114,37 @@ Open:
 http://127.0.0.1:8000
 ```
 
+## Deploy To Vercel
+
+This project includes Vercel-ready files:
+
+- `api/ask.py` for the assistant request endpoint
+- `api/config.py` for safe runtime configuration
+- `vercel.json` for static rewrites from `/` to the `web/` UI
+
+Install or run the Vercel CLI:
+
+```powershell
+npx vercel --version
+```
+
+Add your environment variables in the Vercel dashboard or with the CLI:
+
+```powershell
+npx vercel env add ASSISTANT_PROVIDER production
+npx vercel env add OPENCODE_API_KEY production
+npx vercel env add OPENCODE_BASE_URL production
+npx vercel env add OPENCODE_MODEL production
+```
+
+For preview deployments, add the same variables to the `preview` environment.
+
+Deploy:
+
+```powershell
+npx vercel --prod
+```
+
 ## Provider Options
 
 ### OpenCode Zen

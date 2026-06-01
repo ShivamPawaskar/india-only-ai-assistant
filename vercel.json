@@ -1,0 +1,26 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/web/index.html"
+    },
+    {
+      "source": "/app.js",
+      "destination": "/web/app.js"
+    },
+    {
+      "source": "/styles.css",
+      "destination": "/web/styles.css"
+    },
+    {
+      "source": "/india-mark.svg",
+      "destination": "/web/india-mark.svg"
+    }
+  ],
+  "functions": {
+    "api/*.py": {
+      "maxDuration": 60
+    }
+  }
+}
