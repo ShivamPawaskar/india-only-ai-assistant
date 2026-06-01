@@ -118,8 +118,7 @@ http://127.0.0.1:8000
 
 This project includes Vercel-ready files:
 
-- `api/ask.py` for the assistant request endpoint
-- `api/config.py` for safe runtime configuration
+- `api/index.py` as the serverless API entrypoint
 - `vercel.json` for static rewrites from `/` to the `web/` UI
 
 Install or run the Vercel CLI:
