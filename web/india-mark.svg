@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" role="img" aria-label="India assistant mark">
+  <rect width="260" height="260" rx="28" fill="#fffdf8"/>
+  <circle cx="130" cy="130" r="92" fill="none" stroke="#254f9d" stroke-width="4"/>
+  <circle cx="130" cy="130" r="58" fill="none" stroke="#ddd4c6" stroke-width="2"/>
+  <path d="M130 35v38M130 187v38M35 130h38M187 130h38" stroke="#254f9d" stroke-width="5" stroke-linecap="round"/>
+  <path d="M130 72l22 58-22 58-22-58z" fill="#d66a1f"/>
+  <path d="M130 72l22 58h-44z" fill="#166b4f"/>
+  <circle cx="130" cy="130" r="18" fill="#254f9d"/>
+  <circle cx="130" cy="130" r="7" fill="#fff"/>
+  <path d="M73 82c19-15 45-23 75-18M70 178c18 18 46 28 82 22M185 82c16 19 24 41 22 67" fill="none" stroke="#166b4f" stroke-width="6" stroke-linecap="round"/>
+  <text x="130" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1f2933">India scope</text>
+</svg>

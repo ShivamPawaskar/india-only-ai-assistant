@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>India-Only AI Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="assistant-shell" aria-label="India-Only AI Assistant">
+        <header class="header">
+          <div class="title-block">
+            <div class="brand-mark" aria-hidden="true">IN</div>
+            <div>
+              <p class="kicker">India-Only AI Assistant</p>
+              <h1>Ask about India</h1>
+            </div>
+          </div>
+          <div class="status" id="status"><span aria-hidden="true"></span>Starting</div>
+        </header>
+
+        <div class="config-bar" id="configBar">Loading configuration...</div>
+
+        <div class="messages" id="messages" aria-live="polite">
+          <article class="message assistant">
+            <div class="avatar">IN</div>
+            <div class="bubble">
+              Ask me about Indian history, geography, culture, festivals, states, cities, science, sports, economy, or public life.
+            </div>
+          </article>
+        </div>
+
+        <div class="suggestions" aria-label="Example questions">
+          <button type="button" data-question="What is the capital of India?">Capital of India</button>
+          <button type="button" data-question="Who was Akbar?">Akbar</button>
+          <button type="button" data-question="What are the major festivals of India?">Festivals</button>
+          <button type="button" data-question="Which Indian state has the longest coastline?">States</button>
+        </div>
+
+        <form class="composer" id="questionForm">
+          <label class="sr-only" for="questionInput">Question</label>
+          <div class="input-wrap">
+            <textarea id="questionInput" rows="1" maxlength="2000" placeholder="Ask a focused India-related question..." required></textarea>
+            <span class="char-count" id="charCount">0/2000</span>
+          </div>
+          <button id="sendButton" type="submit" aria-label="Send question" title="Send question">
+            <span aria-hidden="true">-></span>
+          </button>
+        </form>
+      </section>
+
+      <aside class="side-panel">
+        <div class="visual-card">
+          <img src="india-mark.svg" alt="" aria-hidden="true" />
+        </div>
+        <div>
+          <p class="panel-label">Scope</p>
+          <h2>Built for India-specific answers</h2>
+        </div>
+        <p class="panel-copy">
+          The assistant keeps the conversation centered on Indian topics and refuses unrelated questions.
+        </p>
+        <div class="scope-list">
+          <span>History</span>
+          <span>Culture</span>
+          <span>Geography</span>
+          <span>Festivals</span>
+          <span>States</span>
+          <span>Science</span>
+          <span>Sports</span>
+          <span>Economy</span>
+        </div>
+        <div class="panel-note">
+          <strong>Good prompts</strong>
+          <span>Ask with a place, person, period, state, city, event, or policy for sharper answers.</span>
+        </div>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
